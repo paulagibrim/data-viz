@@ -13,8 +13,8 @@ async function status(request, response) {
   const databaseMaxConnectionsValue =
     databaseMaxConnectionsJson.rows[0].max_connections;
 
-  // // OBS.: Aqui eu fiz assim, mas o Filipe fez diferente (dia 20 - PL4)
-  // // Se der erro, verificar aqui.
+  // OBS.: Aqui eu fiz assim, mas o Filipe fez diferente (dia 20 - PL4)
+  // Se der erro, verificar aqui.
   // const databaseActiveConnectionsJson = await database.query(
   //   "SELECT count(*)::int AS active_connections FROM pg_stat_activity WHERE state = 'active';",
   // );
